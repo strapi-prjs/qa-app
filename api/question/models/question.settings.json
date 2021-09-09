@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "Question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "qText": {
+      "type": "text"
+    },
+    "user": {
+      "type": "string"
+    },
+    "answers": {
+      "collection": "answer",
+      "via": "question"
+    }
+  }
+}
